@@ -8,7 +8,6 @@ indent_style = space
 continuation_indent_size = 2
 trim_trailing_whitespace = true
 insert_final_newline = true
-max_line_length = 120
 tab_width = 2
 
 # Starting from ktlint 0.34.2 There is a problem with import "import-ordering" rule - ktlint contradicts
