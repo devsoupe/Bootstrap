@@ -1,0 +1,21 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+continuation_indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 120
+tab_width = 2
+
+# Starting from ktlint 0.34.2 There is a problem with import "import-ordering" rule - ktlint contradicts
+# default AS import arrangement rules, so we have to disable ktlint it.
+# See https://github.com/pinterest/ktlint/issues/527
+# Since IDE complains about unknown `disabled_rules` key we have to disable it as well:
+
+[*.{kt, kts}]
+# noinspection EditorConfigKeyCorrectness
+disabled_rules = import-ordering
